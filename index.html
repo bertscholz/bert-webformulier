@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Belijningstoestellen</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Opmaak.css">
+</head>
+
+<body id="container">
+	<header>
+		<div class="main-header">
+			<h1>Belijningstoestellen</h1>
+			<img src="Afbeeldingen/Expoline.jpg" alt="Expoline Logo">
+		</div>
+
+		<nav class="nav">
+			<ul>
+				<li><a href="#" class="active"><b>Supermatic GM-10</b></a></li>
+				<li><a href="S90/s90.html"><b>Graco Fieldlazer S90</b></a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main>
+
+		<figure class="Foto">
+			<img src="Afbeeldingen/GM-10.jpg" alt="Supermatic GM-10">
+		</figure>
+
+		<form class="form" action="/send_email.php" method="post">
+			 <p>Klantnaam:</p>
+			 <input type="text" name="klantnaam"><br>
+
+			 <p>Klantnummer:</p>
+			 <input type="text" name="klantnummer"><br>
+
+			 <p>Problemen GM-10?</p>
+			<input type="checkbox" name="GM-10" value="Te weinig druk"> Te weinig druk<br>
+  			<input type="checkbox" name="GM-10" value="Slang gesprongen"> Slang gesprongen<br>
+ 			<input type="checkbox" name="GM-10" value="Druk valt weg"> Druk valt weg<br>
+ 			<input type="checkbox" name="GM-10" value="Aandrijfwiel zit vast"> Aandriefwiel zit vast<br>
+ 			<input type="checkbox" name="GM-10" value="Aandrijfrollen versleten"> Aandrijfrollen versleten<br>
+ 			<input type="checkbox" name="GM-10" value="Pompkabel stuk"> Pompkabel stuk<br>
+ 			<input type="checkbox" name="GM-10" value="Pistoolkabel stuk"> Pistoolkabel stuk<br>
+ 			<input type="checkbox" name="GM-10" value="Pistoolkabel blijft lopen"> Pistoolkabel blijft lopen<br>
+ 			<input type="checkbox" name="GM-10" value="Manometer stuk"> Manometer stuk<br>  
+
+			<p>Is er iets anders mis met het toestel?</p>
+			<textarea rows="4" cols="50" name="probleem"></textarea><br>
+
+			<p>Andere informatie</p>
+			<textarea rows="4" cols="50" name="meer-info"></textarea><br>
+
+			<p><input type="submit" value="Doorsturen"></p>
+
+		</form>
+
+	</main>
+	
+	<footer class="main-footer">
+		<p>Copryright &copy; Bert Scholz</p>
+		<p><a href="#">Terug naar boven</a></p>
+	</footer>
+
+</body>
+
+</html>
