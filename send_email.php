@@ -2,9 +2,9 @@
 
 require_once 'vendor/autoload.php';
 
-$transport = (new Swift_SmtpTransport('smtp.google.com', 465))
     ->setUsername(getenv('SMTP_USERNAME'))
     ->setPassword(getenv('SMTP_PASSWORD'));
+$transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
 
 $mailer = new Swift_Mailer($transport);
 
